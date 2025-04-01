@@ -1,0 +1,25 @@
+/**
+ * /src/components/TransporteAereoCalc/style.css
+ */
+.transporteAereoCalc h2 {
+    color: white;
+    margin: 0;
+    padding: 20px 0;
+    text-align: center;
+}
+
+#distanciaAnual {
+    text-align: end;
+    padding: 10px;
+    width: calc(100% - 23px);
+}
+
+.transporteAereo-content {
+    text-align: center;
+    padding: 20px 30px;
+    background-color: rgb(224, 224, 224);
+}
+
+.transporteAereo-content label strong {
+    color: #2A8B12;
+}

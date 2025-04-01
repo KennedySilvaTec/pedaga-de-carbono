@@ -1,0 +1,96 @@
+/**
+ * /src/components/GlpCalc/style.css
+ */
+.glpCalc{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: -35px;
+}
+
+.glpCalc .grid h4 {
+    margin: 0;
+    font-size: normal;
+    font-weight: bold;
+    padding-right: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.glpCalc label {
+    margin-top: 0;
+}
+
+.glpCalc label strong {
+    color: #2A8B12;
+}
+
+.glpCalc #consumoMensal {
+    width: calc(100% - 55px);
+    margin-right: 35px;
+    text-align: end;
+    padding: 10px;
+}
+
+.glpCalc .info-glp-img img {
+    height: auto;
+    width: 30px;
+    border-radius: 50%;
+}
+
+.glpCalc .info-glp-img {
+    position: relative;
+    top: 101px;
+    left: 22%;
+    margin-left: 69%;
+    width: 35px;
+}
+
+.glpCalc .info-glp-img .info-glp {
+    display: none;
+    width: 500%;
+    margin-left: -160px;
+    position: relative;
+    top: 30px;
+    background-color: white;
+    border-radius: 15px 0px 15px 15px;
+    box-shadow: rgb(0, 0, 0) 1px 1px 10px;
+}
+
+.glpCalc .info-glp-img:hover .info-glp {
+    display: block;
+    position: absolute;
+}
+
+@media (max-width: 768px) {
+    .glpCalc {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .glpCalc #consumoMensal {
+        /* width: 100%; */
+         width: calc(100% - 35px);
+         margin-right: 35px;
+    }
+ 
+    .glpCalc .info-glp-img {
+         left: 22%;
+         margin-left: 53%;
+    }
+
+    .glpCalc button {
+        width: calc(100% + 20px);
+    }
+}
+
+@media (max-width: 395px) {
+    .glpCalc .info-glp-img {
+        top: 119px;
+   }
+}

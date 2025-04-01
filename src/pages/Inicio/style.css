@@ -1,0 +1,200 @@
+/**
+ * /src/pages/Inicio/style.css
+ */
+#inicio {
+    width: 760px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    background-color: #2A8B12;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-style: solid;
+    border-radius: 20px;
+    border-width: 1.8px;
+    border-color: #2A8B12;
+    text-align: center;
+    box-shadow: #000 3px 4px 6px;
+    padding-bottom: 20px;
+}
+
+#inicio h1 {
+    color: white;
+    text-shadow: rgb(0, 0, 0) 1px 1px 4px;
+}
+
+#inicio .component-header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    background-color: #2A8B12;
+    border-radius: 40px 40px 0 0;
+}
+
+#inicio .subtitle {
+    width: calc(100% - 40px);
+    background-color: #E0E0E0; 
+    padding: 20px 20px;
+    text-align: center;
+}
+
+#inicio .subtitle  h4 {
+    margin: 0;
+    font-weight: bold;
+}
+
+#inicio .inicio-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: calc(100% - 100px);
+    margin: 20px 20px 20px 20px;
+    background-color: #E0E0E0; 
+    border-radius: 20px;
+    padding: 20px 30px;
+}
+
+#inicio .inicio-content div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#inicio .inicio-content .inicio01Image,
+#inicio .inicio-content .inicio02Image-desktop,
+#inicio .inicio-content .inicio02Image-mobile,
+#inicio .inicio-content .inicio03Image,
+#inicio .inicio-content-final .inicio04Image {
+    height: 115px;
+    width: auto;
+}
+
+#inicio .inicio-content .inicio03Image {
+    margin-right: 20px;
+}
+
+#inicio .inicio-content .inicio02Image-desktop {
+    margin-left: 20px;
+}
+
+#inicio .inicio-content .inicio02Image-mobile {
+    display: none;
+    margin-bottom: 10px;
+}
+
+#inicio .inicio-content .inicio04Image {
+    margin-bottom: 10px;
+}
+
+#inicio .inicio-content p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: justify;
+}
+
+#inicio .inicio-content hr {
+    color: #2A8B12;
+    width: 20%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+#inicio .bt {
+    width: calc(100% - 40px);
+}
+
+#inicio .bt button {
+    border-radius: 12px;
+    border-style: solid;
+    border-color: #19530b;
+    background-color: #19530b;
+    color: white;
+    font-size: 0.95rem;
+      
+    display: block;
+    padding: 10px;
+    margin-top: 10px;
+    width: 100%;
+    transition-property: background-color;
+    transition-duration: .3s;    
+}
+
+#inicio .bt button:hover {
+    background-color: #E0E0E0;
+    color: #2A8B12;
+    border-style: solid;
+    border-color: #19530b;
+    cursor: pointer;
+}
+
+#inicio a { /* O componente Link retorna uma tag <a> como padrão */
+    text-decoration: none;
+    color: #2A8B12;
+}
+
+#inicio hr {
+    height: 10px; 
+    border: none;
+    background-color: #E0E0E0;
+    width: 100%;
+    margin: 0;
+}
+
+#inicio .inicio-content-final {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: calc(100% - 90px);
+    margin: 20px 20px 0 20px;
+    background-color: #E0E0E0; 
+    border-radius: 20px;
+    padding: 20px 20px;
+}
+
+#inicio .inicio-content-final div {
+    width: 100%;
+}
+
+#inicio .inicio-content-final h3 {
+    margin-top: 10px;
+    color: black;
+    margin-bottom: 0;
+}
+
+@media (max-width: 800px) {
+    #inicio {
+        width: 90%;
+    }
+
+    #inicio .inicio-content div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    #inicio .inicio-content .inicio03Image {
+        margin-right: 0px;
+        margin-bottom: 10px;
+    }
+    
+    #inicio .inicio-content .inicio02Image-desktop {
+        display: none;
+    }
+   
+    #inicio .inicio-content .inicio02Image-mobile {
+        display: block;
+    }
+    
+    #inicio .inicio-content .inicio04Image {
+        margin-bottom: 10px;
+    }
+}

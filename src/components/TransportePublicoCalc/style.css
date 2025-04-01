@@ -1,0 +1,127 @@
+/**
+ * /src/components/TransportePublicoCalc/style.css
+ */
+.transportePublico-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 30px;
+    padding-bottom: 20px;
+    background-color: rgb(224, 224, 224);
+}
+
+.transportePublico-content .transportePublico-content-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto 2.33fr 1fr;
+    row-gap: 10px;
+    align-items: flex-end;
+}
+
+.transportePublico-content label {
+    text-align: center;
+}
+
+.transportePublico-content input {
+    padding: 10px;
+    text-align: end;
+}
+
+.transportePublico-content select {
+    padding: 9px;
+}
+
+.transportePublico-content .transportePublico-content-grid .item1,
+.transportePublico-content .transportePublico-content-grid .item4,
+.transportePublico-content .transportePublico-content-grid .item7 {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+}
+
+.transportePublico-content .transportePublico-content-grid h4{
+    margin: 0;
+    font-size: normal;
+    font-weight: bold;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.transportePublico-content .transportePublico-content-grid .item2,
+.transportePublico-content .transportePublico-content-grid .item5,
+.transportePublico-content .transportePublico-content-grid .item8 {
+    width: calc(100% - 30px);
+}
+
+.transportePublico-content .transportePublico-content-grid input {
+    width: 100%;
+}
+
+.transportePublico-content .transportePublico-content-grid strong {
+    color: #2A8B12;
+}
+
+.transportePublico-content .transportePublico-content-grid .item3 input,
+.transportePublico-content .transportePublico-content-grid .item6 input,
+.transportePublico-content .transportePublico-content-grid .item9 input {
+    width: calc(100% - 23px);
+}
+
+.transportePublico-content .transportePublico-content-grid .item5 label,
+.transportePublico-content .transportePublico-content-grid .item6 label,
+.transportePublico-content .transportePublico-content-grid .item8 label,
+.transportePublico-content .transportePublico-content-grid .item9 label {
+    display: none;
+}
+
+@media (max-width: 585px) {
+    .transportePublico-content .transportePublico-content-grid {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .transportePublico-content .transportePublico-content-grid .item1 h4,
+    .transportePublico-content .transportePublico-content-grid .item4 h4,
+    .transportePublico-content .transportePublico-content-grid .item7 h4 {
+        justify-content: center;
+        padding-right: 0px;
+
+    }
+
+    .transportePublico-content .transportePublico-content-grid .item2 label,
+    .transportePublico-content .transportePublico-content-grid .item5 label,
+    .transportePublico-content .transportePublico-content-grid .item8 label {
+        margin-top: 0;
+    }
+    
+    .transportePublico-content .transportePublico-content-grid .item2,
+    .transportePublico-content .transportePublico-content-grid .item5,
+    .transportePublico-content .transportePublico-content-grid .item8 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: calc(100% - 25px);
+    }
+    
+    .transportePublico-content .transportePublico-content-grid .item3,
+    .transportePublico-content .transportePublico-content-grid .item6,
+    .transportePublico-content .transportePublico-content-grid .item9 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .transportePublico-content .transportePublico-content-grid .item5 label,
+    .transportePublico-content .transportePublico-content-grid .item6 label,
+    .transportePublico-content .transportePublico-content-grid .item8 label,
+    .transportePublico-content .transportePublico-content-grid .item9 label {
+        display: block;
+    }
+}

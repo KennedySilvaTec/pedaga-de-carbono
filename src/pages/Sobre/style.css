@@ -1,0 +1,92 @@
+/**
+ * /src/pages/Inicio/style.css
+ */
+#sobre {
+    width: 760px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    background-color: #2A8B12;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-style: solid;
+    border-radius: 20px;
+    border-width: 1.8px;
+    border-color: #2A8B12;
+    text-align: center;
+    box-shadow: #000 3px 4px 6px;
+    padding-bottom: 20px;
+}
+
+#sobre h1 {
+    color: white;
+    text-shadow: rgb(0, 0, 0) 1px 1px 4px;
+}
+
+#sobre .component-header {
+    width: calc(100% - 2px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    background-color: #2A8B12;
+    border-radius: 40px 40px 0 0;
+}
+
+#sobre .subtitle {
+    background-color: #E0E0E0; 
+    padding: 20px 20px;
+    text-align: center;
+    width: calc(100% - 40px);
+}
+
+#sobre .subtitle  p {
+    margin: 0;
+}
+
+#sobre .subtitle p {
+    font-weight: bold;
+}
+
+#sobre .sobre-content {
+    margin: 20px 20px 0px 20px;
+    background-color: #E0E0E0; 
+    border-radius: 20px;
+    padding: 0px 20px 0px 20px;
+    width: calc(100% - 70px);
+    margin-bottom: 20px;
+}
+
+#sobre .sobre-content p {
+    text-align: justify;
+}
+
+#sobre a { /* O componente Link retorna uma tag <a> como padrão */
+    text-decoration: none;
+    color: #2A8B12;
+}
+
+#sobre .sobre-referencias {
+    margin: 20px 20px 0px 20px;
+    background-color: #E0E0E0; 
+    border-radius: 20px;
+    padding: 0px 20px 0px 20px;
+    width: calc(100% - 70px);
+}
+
+#sobre .sobre-referencias p {
+    text-align: justify;
+}
+
+#sobre .sobre-referencias ul {
+    text-align: left;
+    padding-left: 20px;
+    font-weight: 500;
+}
+
+@media (max-width: 800px) {
+    #sobre {
+        width: 90%;
+    }
+}

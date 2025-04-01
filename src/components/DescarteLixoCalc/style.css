@@ -1,0 +1,66 @@
+/**
+ * /src/components/DescarteLixo/style.css
+ */
+.descarteLixoCalc h2 {
+    color: white;
+    margin: 0;
+    padding: 20px 0;
+    text-align: center;
+}
+
+#descarteDiario {
+    text-align: end;
+    width: calc(100% - 25px);
+    margin-right: 35px;
+    padding: 10px;
+}
+
+.descarteLixo-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: center;
+    padding: 20px 30px;
+    padding-top: 0;
+    background-color: rgb(224, 224, 224); 
+}
+
+.descarteLixo-content label {
+    margin-top: 30px; 
+}
+
+.descarteLixo-content label strong {
+    color: #2A8B12;
+}
+
+.descarteLixo-content .info-lixo-img img {
+    height: auto;
+    width: 30px;
+    border-radius: 50%;
+}
+
+.descarteLixo-content .info-lixo-img {
+    position: relative;
+    width: 35px;
+}
+
+.descarteLixo-content .info-lixo-img .info-lixo {
+    display: none;
+    width: 500%;
+    margin-left: -160px;
+    position: relative;
+    top: -85px;
+    background-color: white;
+    border-radius: 15px 15px 0px 15px;
+    box-shadow: rgb(0, 0, 0) 1px 1px 10px;
+}
+
+.descarteLixo-content .info-lixo-img:hover .info-lixo {
+    display: block;
+    position: absolute;
+}
+
+.input-lixo {
+    width: 100%;
+}
